@@ -1,16 +1,16 @@
 # Construindo um Tokenizador BPE e Explorando o WordPiece
 
-## 📋 Descrição do Projeto
+## Descrição do Projeto
 
 Este laboratório implementa os fundamentos do algoritmo **Byte Pair Encoding (BPE)** do zero e explora o funcionamento do algoritmo **WordPiece** através da biblioteca Hugging Face Transformers. O objetivo é compreender como os modelos de linguagem modernos processam texto através de sub-palavras.
 
-## 🎯 Objetivos de Aprendizado
+## Objetivos de Aprendizado
 
 1. **Entender o BPE**: Implementar o motor de frequências e o loop de fusão
 2. **Aplicar a Tokenização**: Usar o tokenizador multilíngue BERT para texto em português
 3. **Analisar Sub-palavras**: Compreender o papel dos símbolos `##` e a robustez contra vocabulário desconhecido
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 ├── tokenizador_bpe_wordpiece.ipynb   # Notebook com todas as implementações
@@ -18,7 +18,7 @@ Este laboratório implementa os fundamentos do algoritmo **Byte Pair Encoding (B
 └── .git/                              # Controle de versão Git
 ```
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 - Python 3.7+
@@ -40,7 +40,7 @@ Este laboratório implementa os fundamentos do algoritmo **Byte Pair Encoding (B
 
 3. **Execute as células** sequencialmente (Shift + Enter em cada célula)
 
-## 📚 Conteúdo Detalhado
+## Conteúdo Detalhado
 
 ### Tarefa 1: O Motor de Frequências
 
@@ -127,7 +127,7 @@ Os símbolos duplo-cerquilha (`##`) indicam que o token é uma **continuação d
 **Exemplo de Decomposição**:
 ```
 "inconstitucionalmente"
-    ↓
+    |
 [incons] [##tituc] [##ion] [##al] [##mente]
 ```
 
@@ -144,12 +144,12 @@ Os símbolos duplo-cerquilha (`##`) indicam que o token é uma **continuação d
    - O modelo aprende o significado desse padrão uma vez e aplica a múltiplas palavras
 
 **Vantagens do WordPiece**:
-- ✅ Sem "tokens desconhecidos" (`[UNK]`)
-- ✅ Tamanho de vocabulário controlado
-- ✅ Melhor representação de morfologia em português
-- ✅ Generalização efetiva para novas palavras
+- Sem "tokens desconhecidos" (`[UNK]`)
+- Tamanho de vocabulário controlado
+- Melhor representação de morfologia em português
+- Generalização efetiva para novas palavras
 
-## 🔧 Usando o Tokenizador
+## Usando o Tokenizador
 
 ```python
 from transformers import AutoTokenizer
@@ -166,7 +166,7 @@ token_ids = tokenizer.convert_tokens_to_ids(tokens)
 print(token_ids)
 ```
 
-## 📊 Observações Importantes
+## Observações Importantes
 
 ### Sobre o BPE Implementado
 - O BPE é um algoritmo **guloso** (greedy)
@@ -180,7 +180,7 @@ print(token_ids)
 - Usado em BERT, RoBERTa e outros modelos baseados em BERT
 - Mais sofisticado que o BPE simples
 
-## 📝 Uso de IA Generativa
+## Uso de IA Generativa
 
 Este projeto foi desenvolvido com suporte de IA generativa (GitHub Copilot). 
 
@@ -192,19 +192,19 @@ Este projeto foi desenvolvido com suporte de IA generativa (GitHub Copilot).
 
 **Integridade Acadêmica**: Todos os trechos foram testados, validados e compreendidos antes da submissão. O código foi verificado mostrando a validação correta do par `('e', 's')` com frequência 9.
 
-## 🔗 Referências
+## Referências
 
 - Sennrich et al. (2016) - "Neural Machine Translation of Rare Words with Subword Units" (BPE Original)
 - Devlin et al. (2019) - "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
 - Hugging Face Documentation: https://huggingface.co/
 
-## 📦 Versão
+## Versão
 
 - **Versão**: 1.0
 - **Data**: 2026-03-29
 - **Tag Git**: v1.0
 
-## ✅ Checklist de Entrega
+## Checklist de Entrega
 
 - [x] Código-fonte commitado no GitHub
 - [x] Tarefa 1: Função `get_stats()` com validação de frequência
@@ -215,7 +215,7 @@ Este projeto foi desenvolvido com suporte de IA generativa (GitHub Copilot).
 - [x] Git tag v1.0 aplicada
 - [x] Documentação de uso de IA generativa incluída
 
-## 👨‍💻 Autor
+## Autor
 
 Desenvolvido como parte do laboratório de Processamento de Linguagem Natural.
 
