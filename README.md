@@ -182,13 +182,15 @@ print(token_ids)
 
 ## Uso de IA Generativa
 
-Este projeto foi desenvolvido com suporte de IA generativa (GitHub Copilot). 
+Este projeto foi desenvolvido com suporte de IA generativa (GitHub Copilot) e revisado por **Wendril Gabriel**.
 
 **Trechos gerados e revisados**:
 - Função `merge_vocab()`: Estrutura base revisada para garantir funcionalidade correta
 - Função `get_stats()`: Lógica de iteração sobre símbolos e contagem de pares
 - Loop principal: Estrutura de iteração e formatação de output
 - Documentação e comentários: Explicações técnicas expandidas
+
+**Revisor**: Wendril Gabriel
 
 **Integridade Acadêmica**: Todos os trechos foram testados, validados e compreendidos antes da submissão. O código foi verificado mostrando a validação correta do par `('e', 's')` com frequência 9.
 
@@ -201,24 +203,5 @@ Este projeto foi desenvolvido com suporte de IA generativa (GitHub Copilot).
 ## Versão
 
 - **Versão**: 1.0
-- **Data**: 2026-03-29
+- **Data**: 2026-03
 - **Tag Git**: v1.0
-
-## Checklist de Entrega
-
-- [x] Código-fonte commitado no GitHub
-- [x] Tarefa 1: Função `get_stats()` com validação de frequência
-- [x] Tarefa 2: Função `merge_vocab()` com 5 iterações executadas
-- [x] Tarefa 3: Tokenizador WordPiece do BERT testado
-- [x] Explicação de `##` símbolos no README
-- [x] Discussão sobre robustez de vocabulário
-- [x] Git tag v1.0 aplicada
-- [x] Documentação de uso de IA generativa incluída
-
-## Autor
-
-Desenvolvido como parte do laboratório de Processamento de Linguagem Natural.
-
----
-
-**Nota**: Este repositório contém uma implementação educacional dos algoritmos BPE e WordPiece. Para uso em produção, utilize as bibliotecas oficiais como `tokenizers` ou `transformers` do Hugging Face.
