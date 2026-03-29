@@ -182,15 +182,13 @@ print(token_ids)
 
 ## Uso de IA Generativa
 
-Este projeto foi desenvolvido com suporte de IA generativa (GitHub Copilot) e revisado por **Wendril Gabriel**.
+Este projeto foi desenvolvido com suporte de IA generativa e revisado por **Wendril Gabriel**.
 
-**Trechos gerados e revisados**:
+**Trechos gerados e revisados**: 
 - Função `merge_vocab()`: Estrutura base revisada para garantir funcionalidade correta
 - Função `get_stats()`: Lógica de iteração sobre símbolos e contagem de pares
 - Loop principal: Estrutura de iteração e formatação de output
 - Documentação e comentários: Explicações técnicas expandidas
-
-**Revisor**: Wendril Gabriel
 
 **Integridade Acadêmica**: Todos os trechos foram testados, validados e compreendidos antes da submissão. O código foi verificado mostrando a validação correta do par `('e', 's')` com frequência 9.
 
